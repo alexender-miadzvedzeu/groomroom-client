@@ -1,0 +1,31 @@
+.wrapper {
+    width: 100%;
+    /* height: 100vh; */
+    background: url('../../images/headerBG.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5%;
+}
+.head {
+    color: #F44C9D;
+    font-size: 30px;
+    margin: 10% 0 0 10%;
+}
+.button {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #F44C9D;
+    background: #FFC4E1;
+    border-radius: 18px;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0 0 10%;
+    cursor: pointer;
+}
+.button span {
+    font-family: 'Prosto One', cursive;
+}
