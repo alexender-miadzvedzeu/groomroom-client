@@ -1,0 +1,6 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 3% 10%;
+    background: #FFC3E1;
+}

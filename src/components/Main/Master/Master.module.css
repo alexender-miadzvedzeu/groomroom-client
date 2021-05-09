@@ -1,0 +1,28 @@
+.wrapper {
+    background: url(../../../images/bg/paw_print__master.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.head {
+    font-family: Prosto One;
+    color: #604051;
+    font-weight: normal;
+    padding: 5% 0 2% 15%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5% 10% 5%;
+    /* min-height: 500px; */
+}
+.container__canvas {
+    /* width: 60%; */
+}
+.container__text {
+    width: 55%;
+    color: #604051;
+    line-height: 36px;
+    font-size: 26px;
+    margin-left: 10%;
+}

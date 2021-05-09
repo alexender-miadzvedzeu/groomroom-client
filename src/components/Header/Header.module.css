@@ -2,11 +2,12 @@
     width: 100%;
     /* height: 100vh; */
     background: url('../../images/headerBG.jpg');
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;/*???*/
     padding-bottom: 5%;
+    /* height: 1250px; */
 }
 .head {
     color: #F44C9D;
