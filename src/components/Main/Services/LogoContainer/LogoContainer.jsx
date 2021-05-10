@@ -8,9 +8,12 @@ class LogoContainer extends React.Component {
         let data = this.props.services.servicesReducer.servicesData;
         return (
             <div className={classes.wrapper}>
-                {data.map(elem => {
-                    return <Logo elem={elem}/>
-                })}
+                <h3 className={classes.head}>Услуги</h3>
+                <div className={classes.container}>
+                    {data.map(elem => {
+                        return <Logo elem={elem} />
+                    })}
+                </div>
             </div>
         )
     }

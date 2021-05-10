@@ -1,6 +1,18 @@
+/* @import t from './../../../../../public/images/services/claws.png' */
 .wrapper {
+    background: #FFC3E1;
+    position: relative;
+}
+.container {
     display: flex;
     justify-content: center;
     padding: 3% 10%;
-    background: #FFC3E1;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.head {
+    position: absolute;
+    top: -25%;
+    width: 100%;
+    text-align: center;
 }

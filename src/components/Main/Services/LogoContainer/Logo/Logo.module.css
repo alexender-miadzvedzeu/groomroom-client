@@ -1,6 +1,7 @@
 .wrapper {
     width: 15%;
     margin-left: 10px;
+    z-index: 1;
 }
 .wrapper:first-of-type {
     margin-left: 0;
