@@ -22,4 +22,5 @@
 .navButtons li {
     list-style-type: none;
     color: #F44C9D;
+    cursor: pointer;
 }

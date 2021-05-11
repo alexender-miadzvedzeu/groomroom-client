@@ -3,7 +3,9 @@
     height: 30px;
     position: absolute;
     opacity: 0.2;
+    overflow-y: hidden;
 }
+
 .icon:nth-last-of-type(1) {
     top: 15%;
     left: 1%;
@@ -66,7 +68,7 @@
 }
 .icon:nth-last-of-type(15) {
     top: 10%;
-    left: 95%;
+    left: 93%;
 }
 .icon:nth-last-of-type(16) {
     top: 37%;
@@ -125,8 +127,8 @@
     left: 40%;
 }
 .icon:nth-last-of-type(30) {
-    top: 75%;
-    left: 95%;
+    top: 21%;
+    left: 78%;
 }
 .icon:nth-last-of-type(31) {
     top: 73%;
@@ -150,7 +152,7 @@
 }
 .icon:nth-last-of-type(36) {
     top: 31%;
-    left: 96%;
+    left: 94%;
 }
 .icon:nth-last-of-type(37) {
     top: 18%;
@@ -206,7 +208,7 @@
 }
 .icon:nth-last-of-type(50) {
     top: 23%;
-    left: 91%;
+    left: 87%;
 }
 .icon:nth-last-of-type(51) {
     top: 73%;

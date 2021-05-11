@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './BGIcon.module.css';
 
 const BGIcon = (props) => {
+    
     return (
         <div
             className = {classes.icon}

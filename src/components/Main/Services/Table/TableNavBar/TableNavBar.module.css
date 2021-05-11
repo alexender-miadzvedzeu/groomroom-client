@@ -1,0 +1,28 @@
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, calc(100% / 6));
+}
+.navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.navButton a {
+    font-size: 11px;
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font: monsteraat 16 medium serif;
+    color: #604051;
+    background: #FFC3E1;
+}
+.navButton a.activeLInk {
+    color: #fff;
+    background: #604051;
+
+}

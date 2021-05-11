@@ -1,0 +1,40 @@
+.wrapper {
+    /* width: 100%; */
+    font-family: Prosto One;
+}
+.tableHead {
+    background: #604051;
+    color: #fff;
+    width: 100%;
+    font-weight: normal;
+    font-size: 11px;
+    text-align: center;
+}
+.tableRow {
+    height: 25px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.tableRow:nth-last-of-type(2n + 1) {
+    background: #FFC3E1;
+}
+.tableRow:nth-last-of-type(2n) {
+    background: #fff;
+}
+span {
+    font-size: 12px;
+}
+
+.rowName,
+.rowPrice {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.rowName {
+    margin-left: 20px;
+}
+.rowPrice {
+    justify-content: flex-end;
+    margin-right: 20px;
+}

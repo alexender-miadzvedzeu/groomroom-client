@@ -1,17 +1,13 @@
 import React from 'react';
 import classes from './Services.module.css';
-import CanvasBefore from "./Canvas-before/CanvasBefore";
-import LogoContainer from "./LogoContainer/LogoContainer";
-import CanvasAfter from "./Canvas-after/CanvasAfter";
-import BGIconContainer from "./BGIconContainer/BGIconContainer";
+import ServicesHead from "./ServicesHead/ServicesHead";
+import Table from "./Table/Table";
 
 const Services = (props) => {
     return (
         <div className={classes.wrapper}>
-            <CanvasBefore />
-            <LogoContainer />
-            <CanvasAfter />
-            <BGIconContainer />
+            <ServicesHead />
+            <Table />
         </div>
     )
 }
