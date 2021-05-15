@@ -5,9 +5,12 @@
 }
 .navButton {
     display: flex;
+    height: 80px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+
 }
 .navButton a {
     font-size: 11px;
@@ -15,8 +18,7 @@
     text-decoration: none;
     height: 100%;
     width: 100%;
-    padding-top: 5%;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    padding-top: 30px;
     font: monsteraat 16 medium serif;
     color: #604051;
     background: #FFC3E1;

@@ -1,7 +1,5 @@
 .wrapper {
-    background: url(../../../images/bg/paw_print__master.png);
-    background-repeat: no-repeat;
-    background-position: right;
+    position: relative;
 }
 .head {
     font-family: Prosto One;
@@ -25,4 +23,16 @@
     line-height: 36px;
     font-size: 26px;
     margin-left: 10%;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../../images/bg/paw_print__master.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 0;
+    opacity: 0.1;
 }
