@@ -10,8 +10,8 @@ class LogoContainer extends React.Component {
             <div className={classes.wrapper}>
                 <h3 className={classes.head}>Услуги</h3>
                 <div className={classes.container}>
-                    {data.map(elem => {
-                        return <Logo elem={elem} />
+                    {data.map((elem, key) => {
+                        return <Logo elem={elem} key={key} />
                     })}
                 </div>
             </div>

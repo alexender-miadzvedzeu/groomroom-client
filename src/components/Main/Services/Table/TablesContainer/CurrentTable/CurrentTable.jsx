@@ -20,9 +20,9 @@ const CurrentTable = props => {
         <div className={classes.wrapper}>
             <h3 className={classes.tableHead}><span>{props.table.tableHead}</span></h3>
             <div className={classes.tableContainer}>
-                {props.table.table.map(elem => {
+                {props.table.table.map((elem, key) => {
                     return (
-                        <div className={classes.tableRow}>
+                        <div className={classes.tableRow} key={key}>
                             <div className={classes.rowName}><span>{elem.service_name}</span></div>
                             <div className={classes.rowPrice}><span>{elem.service_price} byn</span></div>
                         </div>

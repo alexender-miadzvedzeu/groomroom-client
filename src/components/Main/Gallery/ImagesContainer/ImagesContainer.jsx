@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import classes from './ImagesContainer.module.css';
 import { connect } from "react-redux";
 import { setPhotosAC } from "./../../../../Redux/imagesReducer";
 import Image from "./Image/Image";
 
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
+
 const ImagesContainer = (props) => {
-    const setPhotos = photoData => {
-        props.setPhotos(photoData)
-    }
+    const imgBoxRef = React.createRef()
     useEffect(() => {
         const responce = async () => {
             await fetch('http://localhost:8888/images', {
@@ -17,19 +18,26 @@ const ImagesContainer = (props) => {
             .then(data => setPhotos(data))
         }
         responce();
+
+        const width = imgBoxRef.current.getBoundingClientRect().width;
+        console.log(width);
     }, [])
 
-    const imagesArr = props.photos.map(photo => <Image url={photo} />)
+    const setPhotos = photoData => {
+        props.setPhotos(photoData)
+    }
+
+    const imagesArr = props.photos.map((photo, key) => <Image url={photo} key={key} />)
 
     return (
         <div className={classes.wrapper}>
-            <div className={classes.imgBox}>
-                {imagesArr}
+            <div className={classes.imgBox} ref={imgBoxRef}>
+                {/* {imagesArr} */}
             </div>
         </div>
     )
 }
-// connect
+
 let mapStateToProps = state => {
     return {
         photos: state.imagesReducer.photoData

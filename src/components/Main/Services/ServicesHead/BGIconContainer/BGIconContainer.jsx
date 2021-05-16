@@ -8,7 +8,7 @@ class BGIconContainer extends React.Component {
         let data = this.props.services.servicesReducer.bgIconsData;
         return (
             <div className={classes.wrapper}>
-                {data.map(elem => <BGIcon elem={elem}/>)}
+                {data.map((elem, key) => <BGIcon elem={elem} key={key} />)}
             </div>
         )
     }

@@ -3,11 +3,16 @@ import classes from './Canvas.module.css';
 import ava from '../../../../images/vika2.jpg';
 
 class Canvas extends React.Component {
+    constructor(props) {
+        super(props);
+        this.myCanvas = React.createRef();
+        this.myImg = React.createRef();
+    }
 
     componentDidMount () {
-        const canvas = this.refs.canvas;
+        const canvas = this.myCanvas.current;
         const ctx = canvas.getContext("2d");
-        const img = this.refs.image;
+        const img = this.myImg.current;
 
         img.onload = () => {
             ctx.shadowColor = 'black';
@@ -32,8 +37,8 @@ class Canvas extends React.Component {
     render() {
         return (
             <div className={classes.wrapper}>
-                <canvas ref='canvas' id={classes.draw} width="320" height="360"></canvas>
-                <img ref='image' id={classes.ava} className={classes.hidden} src={ava} />
+                <canvas ref={this.myCanvas} id={classes.draw} width="320" height="360"></canvas>
+                <img ref={this.myImg} id={classes.ava} className={classes.hidden} src={ava} />
             </div>
         )
     }
