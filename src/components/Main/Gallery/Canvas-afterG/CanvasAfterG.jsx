@@ -26,7 +26,7 @@ class CanvasAfterG extends React.Component {
             ctx.quadraticCurveTo(width * 0.95, 25, width, 0);
             ctx.lineTo(width, 0);
             ctx.lineTo(0, 0);
-            ctx.fill();
+            
 
         }
         draw();

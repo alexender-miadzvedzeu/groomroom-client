@@ -21,3 +21,6 @@
     display: block;
     border-radius: 25px;
 }
+#draw {
+    cursor: pointer;
+}
