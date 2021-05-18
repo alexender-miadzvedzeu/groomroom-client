@@ -10,7 +10,7 @@ class CanvasBefore extends React.Component {
         const draw = () => {
             const canvas = this.myCanvas.current;
             const ctx = canvas.getContext("2d");
-            let width = window.innerWidth - 14;
+            let width = window.innerWidth - 17;
             let height = 50;
             canvas.width = width;
             canvas.height = height;

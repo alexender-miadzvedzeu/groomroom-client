@@ -3,6 +3,7 @@ import classes from './Main.module.css';
 import Master from './Master/Master';
 import Services from "./Services/Services";
 import Gallery from "./Gallery/Gallery";
+import Questions from "./Questions/Questions";
 
 const Main = () => {
     return (
@@ -10,6 +11,7 @@ const Main = () => {
             <Master />
             <Services />
             <Gallery />
+            <Questions />
         </div>
     )
 }

@@ -1,4 +1,9 @@
 .wrapper {
     overflow-y: hidden;
     position: relative;
+    background: url(../../../images/bg/paw_print__services.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 10%;
 }
+

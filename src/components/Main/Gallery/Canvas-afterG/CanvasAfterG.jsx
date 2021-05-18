@@ -10,7 +10,7 @@ class CanvasAfterG extends React.Component {
         const draw = () => {
             const canvas = this.myCanvas.current;
             const ctx = canvas.getContext("2d");
-            let width = window.innerWidth - 14;
+            let width = window.innerWidth - 17;
             let height = 50;
             canvas.width = width;
             canvas.height = height;
@@ -26,8 +26,7 @@ class CanvasAfterG extends React.Component {
             ctx.quadraticCurveTo(width * 0.95, 25, width, 0);
             ctx.lineTo(width, 0);
             ctx.lineTo(0, 0);
-            
-
+            ctx.fill();
         }
         draw();
         window.addEventListener('resize', draw);

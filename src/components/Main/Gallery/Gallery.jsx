@@ -13,7 +13,6 @@ const Gallery = () => {
             <ImagesContainer />
             <CanvasAfterG />
             <BGIconContainerG />
-            
         </div>
     )
 }

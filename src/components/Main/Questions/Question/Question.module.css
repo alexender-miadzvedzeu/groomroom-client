@@ -1,0 +1,31 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.iconBlock {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+ 
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.questionBlock {
+    margin-left: 15px;
+    width: 100%;
+}
+.questionBlock .question {
+    font-family: Montserrat;
+    color: #604051;
+}
+.questionBlock .answer {
+    font-family: Montserrat;
+    color: #000;
+    font-size: 11px;
+    margin: 5px 0 25px;
+}
