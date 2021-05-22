@@ -4,6 +4,7 @@ import Master from './Master/Master';
 import Services from "./Services/Services";
 import Gallery from "./Gallery/Gallery";
 import Questions from "./Questions/Questions";
+import QuestionsForm from "./QuestionsForm/QuestionsForm";
 
 const Main = () => {
     return (
@@ -12,6 +13,7 @@ const Main = () => {
             <Services />
             <Gallery />
             <Questions />
+            <QuestionsForm />
         </div>
     )
 }

@@ -9,6 +9,8 @@
     padding: 3% 10%;
     background-repeat: no-repeat;
     z-index: -1;
+    max-width: 1550px;
+    margin: 0 auto;
 }
 .head {
     position: absolute;

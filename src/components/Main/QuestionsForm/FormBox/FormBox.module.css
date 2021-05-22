@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #492D3C;
+    position: relative;
+    z-index: 2;
+}
+.canvasWrapper {
+    position: relative;
+}
+.formWrapper {
+    margin-left: 50px;
+}
+.inputBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    font-family: 'Prosto One';
+    color: #FFC3E1;
+}
+.span {
+    color: #FFC3E1;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 80px;
+    left: 330px;
+    display: none;
+}

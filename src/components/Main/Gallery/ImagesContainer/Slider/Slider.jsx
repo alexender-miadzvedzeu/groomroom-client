@@ -37,7 +37,7 @@ class SampleNextArrow extends React.Component {
                     ...this.style,
                     position: 'relative',
                     bottom: '0',
-                    left: '43%',
+                    left: '48%',
                     zIndex: 5,
                     display: "block",
                     width: '50px'
@@ -49,32 +49,6 @@ class SampleNextArrow extends React.Component {
         )
     }
 }
-
-
-
-// const SampleNextArrow = props => {
-//     const { className, style, onClick } = props;
-//     const canvas = useRef().current;
-//     console.log(canvas);
-//     // const ctx = canvas.getContext("2d");
-
-//     return (
-//         <div
-//             className={className}
-//             style={{ ...style, 
-//                 position: 'relative',
-//                 bottom: '0',
-//                 left: '45%', 
-//                 zIndex: 5, 
-//                 display: "block", 
-//                 // background: "red" 
-//             }}
-//             onClick={onClick}
-//         >
-//             <canvas ref={canvas} id={classes.draw} width="320" height="360"></canvas>
-//         </div>
-//     );
-// }
 
 class SamplePrevArrow extends React.Component {
     constructor(props) {
@@ -108,8 +82,8 @@ class SamplePrevArrow extends React.Component {
                 style={{
                     ...this.style,
                     position: 'relative',
-                    top: '308px',
-                    left: '50%',
+                    top: '314px',
+                    left: '52%',
                     zIndex: 5,
                     display: "block",
                     width: '50px' 
@@ -122,7 +96,6 @@ class SamplePrevArrow extends React.Component {
     }
 
 }
-
 
 const CenterMode = props => {
     const [photoArr, setphotoArr] = useState([]);
@@ -139,14 +112,53 @@ const CenterMode = props => {
     const settings = {
         className: "center",
         centerMode: true,
-        // infinite: true,
-        // centerPadding: "50px",
         slidesToShow: 4,
         speed: 500,
         lazyLoad: "progressive",
-        // adaptiveHeight: true,
         nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 3000,
+                settings: {
+                    slidesToShow: 17,
+                    slidesToScroll: 3,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 2500,
+                settings: {
+                    slidesToShow: 15,
+                    slidesToScroll: 3,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 2000,
+                settings: {
+                    slidesToShow: 11,
+                    slidesToScroll: 3,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 8,
+                    slidesToScroll: 3,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 3,
+                    infinite: true
+                }
+            }
+        ]
     };
 
     return (
