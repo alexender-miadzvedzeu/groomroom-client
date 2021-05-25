@@ -1,0 +1,10 @@
+.itemBox {
+    display: flex;
+    overflow-y: hidden;
+}
+.itemBox::-webkit-scrollbar {
+    width: 0;
+}
+.empty {
+    padding: 0 20%;
+}

@@ -6,11 +6,19 @@
     position: relative;
     z-index: 2;
 }
+.box {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .canvasWrapper {
     position: relative;
 }
 .formWrapper {
-    margin-left: 50px;
+    margin-left: 10px;
 }
 .inputBox {
     display: flex;

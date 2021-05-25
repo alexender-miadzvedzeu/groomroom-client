@@ -1,0 +1,13 @@
+.hidden {
+    display: none;
+}
+.wrapper {
+    overflow-y: hidden;
+}
+#draw{
+    overflow-y: hidden;
+    display: block;
+}
+.iconsHidden {
+    display: none;
+}

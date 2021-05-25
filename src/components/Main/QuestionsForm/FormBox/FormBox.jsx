@@ -129,58 +129,61 @@ const FormBox = () => {
     }
     return (
         <div className={classes.wrapper}>
-            <div className={classes.formWrapper}>
-                <h3 className={classes.header}>Остались вопросы?</h3>
-                <Form>
-                    <div className={classes.container}>
-                        <Form.Text style={{margin: '15px 0', fontSize: '1rem', color: '#E5DDCD'}}>Оставьте заявку и мы свяжемся с Вами</Form.Text>
-                        <div className={classes.inputBox}>
-                            <Form.Group controlId="formBasicName">
-                                <Form.Control ref={questionInput} style={{ background: '#DACFB9', borderRadius: '50px' }} type="text" placeholder="Ваше Имя" autoComplete = "off" />
-                            </Form.Group>
-                            <Form.Group controlId="formBasicNum">
-                                <Form.Control 
-                                    ref={numberInput} 
-                                    style={{ background: '#DACFB9', borderRadius: '50px', marginLeft: '20px' }} 
-                                    type="tel" 
-                                    placeholder="Номер телефона"
-                                    autoComplete = "off"
-                                    onChange={formatTelInputValue} 
-                                />
-                            </Form.Group>
-                        </div>
-                        <span ref={errTypeSpan} className={classes.span}></span>
-                        <div className={classes.buttonBlock}>
-                            <Form.Group controlId="formBasicCheckbox" >
-                                <Form.Check 
-                                    onClick={() => checkbox.current.checked ? button.current.disabled = false : button.current.disabled = true } 
-                                    ref={checkbox} 
-                                    style={{color: '#E5DDCD'}} 
-                                    type="checkbox" 
-                                    label="Я даю согласие на обработку личных данных" 
-                                />
-                            </Form.Group>
-                            <Button
-                                onClick={() =>{ 
-                                    if (questionInput.current.value.length != 0 && numberInput.current.value.length != 0 && numberInput.current.value.length === 17) {
-                                        sendQuestion(questionInput.current.value, numberInput.current.value)
-                                        window.location.reload()
-                                    } else {
-                                        errTypeSpan.current.innerHTML = 'Введите корректные данные'
-                                        errTypeSpan.current.style.display = 'block'
-                                    }
-                                }}
-                                ref={button} 
-                                style={{background: '#FFC3E1', color: '#000', padding: '10px 50px',  fontFamily: 'Prosto One', border: 'none', borderRadius: '10px'}} 
-                                variant="primary" 
+            <div className={classes.box}>
+                <div className={classes.formWrapper}>
+                    <h3 className={classes.header}>Остались вопросы?</h3>
+                    <Form>
+                        <div className={classes.container}>
+                            <Form.Text style={{ margin: '15px 0', fontSize: '1rem', color: '#E5DDCD' }}>Оставьте заявку и мы свяжемся с Вами</Form.Text>
+                            <div className={classes.inputBox}>
+                                <Form.Group controlId="formBasicName">
+                                    <Form.Control ref={questionInput} style={{ background: '#DACFB9', borderRadius: '50px' }} type="text" placeholder="Ваше Имя" autoComplete="off" />
+                                </Form.Group>
+                                <Form.Group controlId="formBasicNum">
+                                    <Form.Control
+                                        ref={numberInput}
+                                        style={{ background: '#DACFB9', borderRadius: '50px', marginLeft: '20px' }}
+                                        type="tel"
+                                        placeholder="Номер телефона"
+                                        autoComplete="off"
+                                        onChange={formatTelInputValue}
+                                    />
+                                </Form.Group>
+                            </div>
+                            <span ref={errTypeSpan} className={classes.span}></span>
+                            <div className={classes.buttonBlock}>
+                                <Form.Group controlId="formBasicCheckbox" >
+                                    <Form.Check
+                                        onClick={() => checkbox.current.checked ? button.current.disabled = false : button.current.disabled = true}
+                                        ref={checkbox}
+                                        style={{ color: '#E5DDCD' }}
+                                        type="checkbox"
+                                        label="Я даю согласие на обработку личных данных"
+                                    />
+                                </Form.Group>
+                                <Button
+                                    onClick={() => {
+                                        if (questionInput.current.value.length != 0 && numberInput.current.value.length != 0 && numberInput.current.value.length === 17) {
+                                            sendQuestion(questionInput.current.value, numberInput.current.value)
+                                            window.location.reload()
+                                        } else {
+                                            errTypeSpan.current.innerHTML = 'Введите корректные данные'
+                                            errTypeSpan.current.style.display = 'block'
+                                        }
+                                    }}
+                                    ref={button}
+                                    style={{ background: '#FFC3E1', color: '#000', padding: '10px 50px', fontFamily: 'Prosto One', border: 'none', borderRadius: '10px' }}
+                                    variant="primary"
                                 >Оставить заявку</Button>
+                            </div>
                         </div>
-                    </div>
-                </Form>
+                    </Form>
+                </div>
+                <div className={classes.canvasWrapper}>
+                    <Canvas />
+                </div>
             </div>
-            <div className={classes.canvasWrapper}>
-                <Canvas />
-            </div>
+
         </div>
     )
 

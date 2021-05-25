@@ -5,6 +5,9 @@ import Services from "./Services/Services";
 import Gallery from "./Gallery/Gallery";
 import Questions from "./Questions/Questions";
 import QuestionsForm from "./QuestionsForm/QuestionsForm";
+import Feedback from "./Feedbacks/Feedbacks";
+import Contacts from "./Contacts/Contacts";
+import Footer from "./Footer/Footer";
 
 const Main = () => {
     return (
@@ -14,6 +17,9 @@ const Main = () => {
             <Gallery />
             <Questions />
             <QuestionsForm />
+            <Feedback />
+            <Contacts />
+            <Footer />
         </div>
     )
 }

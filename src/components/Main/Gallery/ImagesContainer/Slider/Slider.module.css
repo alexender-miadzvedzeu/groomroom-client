@@ -12,6 +12,9 @@
 }
 .header {
     margin-left: 15%;
+    font-family: Prosto One;
+    color: #604051;
+    font-weight: normal;
 }
 .img {
     width: 90%;
