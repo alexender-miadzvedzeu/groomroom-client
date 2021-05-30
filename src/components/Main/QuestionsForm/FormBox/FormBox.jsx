@@ -16,7 +16,7 @@ const FormBox = () => {
     const errTypeSpan = useRef();
     const sendQuestion = async (question, num) => {
         let data = {title: question, phone: num.replace(/[-()+]/g, "")}; 
-        await fetch('http://localhost:8888/questions', {
+        await fetch(`${process.env.REACT_APP_URL}/questions`, {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json'

@@ -101,7 +101,7 @@ const CenterMode = props => {
     const [photoArr, setphotoArr] = useState([]);
     useEffect(() => {
         const responce = async () => {
-            await fetch("http://localhost:8888/images", {
+            await fetch(`${process.env.REACT_APP_URL}/images`, {
                 method: 'get'
             })
                 .then(res => res.json())

@@ -1,14 +1,13 @@
 import React from 'react';
 import classes from './Footer.module.css';
-import logo from '../../../images/logo.png'
-import phoneNumLogo from '../../../images/footer/phoneNumLogo.png';
-import instagramLogo from '../../../images/footer/instagramLogo.png';
-import adresLogo from '../../../images/footer/adresLogo.png';
-import workTimeLogo from '../../../images/footer/workTimeLogo.png';
+import logo from '../../images/logo.png'
+import phoneNumLogo from '../../images/footer/phoneNumLogo.png';
+import instagramLogo from '../../images/footer/instagramLogo.png';
+import adresLogo from '../../images/footer/adresLogo.png';
+import workTimeLogo from '../../images/footer/workTimeLogo.png';
 
 const Footer = () => {
     let date = new Date()
-    console.log(date.getFullYear())
     return (
         <div className={classes.wrapper}>
             <div className={classes.containerLeft}>

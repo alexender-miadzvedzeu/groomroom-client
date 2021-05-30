@@ -8,7 +8,7 @@ import { Button } from 'react-bootstrap';
 const FeedbackContainer = props => {
     const box = useRef()
     useEffect(async () => {
-        await fetch('http://localhost:8888/feedback', {
+        await fetch(`${process.env.REACT_APP_URL}/feedback`, {
             method: 'get'
         })
         .then(res => res.json())

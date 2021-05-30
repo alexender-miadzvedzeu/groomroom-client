@@ -8,7 +8,7 @@ const CurrentTable = props => {
     useEffect(() => {
         let tableName = props.table.tableName;
         const responce = async () => {
-            await fetch(`http://localhost:8888/services/${tableName}`, {
+            await fetch(`${process.env.REACT_APP_URL}/services/${tableName}`, {
                 method: 'get'
             })
             .then(req => req.json())
