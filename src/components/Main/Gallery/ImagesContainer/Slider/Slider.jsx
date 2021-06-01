@@ -112,7 +112,7 @@ const CenterMode = props => {
     const settings = {
         className: "center",
         centerMode: true,
-        slidesToShow: 4,
+        slidesToShow: 5,
         speed: 500,
         lazyLoad: "progressive",
         nextArrow: <SampleNextArrow />,
