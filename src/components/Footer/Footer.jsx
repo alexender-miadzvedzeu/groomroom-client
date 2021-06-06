@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Footer.module.css';
-import logo from '../../images/logo.png'
+import logo from '../../images/footer/logo.png'
 import phoneNumLogo from '../../images/footer/phoneNumLogo.png';
 import instagramLogo from '../../images/footer/instagramLogo.png';
 import adresLogo from '../../images/footer/adresLogo.png';
@@ -14,7 +14,11 @@ const Footer = () => {
                 <div className={classes.logoBox}>
                     <img className={classes.logo} src={logo} alt="logo" />
                 </div>
-                <p className={classes.name}>{`© ${date.getFullYear()} Groomroom.by`}</p>
+                <div>
+                    <p className={classes.name}>{`© ${date.getFullYear()} Groomroom.by`}</p>
+                    <a className={classes.linkSachko} href="https://www.instagram.com/sachko.design/">Designed by @alexandr.sachko</a>
+                </div>
+                
             </div>
             <div className={classes.containerMiddle}>
                 <a className={classes.link} href="#">Наш мастер</a>

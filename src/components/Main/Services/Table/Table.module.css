@@ -1,6 +1,62 @@
 .wrapper {
     width: 80%;
-    max-width: 1350px;
+    max-width: 800px;
     min-height: 950px;
     margin: 0 auto;
+}
+.navBar {
+    display: grid;
+    min-height: 75px;
+    grid-template-columns: repeat(6, calc(100%/6));
+}
+.navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFC3E1;
+    color: #604051;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+}
+.navButton#active {
+    background: #604051;
+    color: #fff;
+}
+.navButton:hover {
+    cursor: pointer;
+}
+.navButton_text {
+    text-align: center;
+    font-size: 0.8rem;
+}
+.navButton:last-of-type {
+    box-shadow: -1px 0px 4px rgba(0, 0, 0, 0.3);;
+}
+.tableRow {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tableRow:nth-last-of-type(2n + 1) {
+    background: #FFC3E1;
+}
+.tableRow:nth-last-of-type(2n) {
+    background: #fff;
+}
+.tableRow_name,
+.tableRow_price {
+    margin-bottom: 0;
+    font-family: Prosto One;
+    font-style: normal;
+    font-weight: normal;
+}
+.tableRow_name {
+    margin-left: 10px;
+}
+.tableRow_price {
+    margin-right: 10px;
+    text-align: center;
 }

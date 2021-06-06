@@ -23,8 +23,6 @@
     width: 250px;
     height: 80px;
     overflow: hidden;
-    border: 1px solid #E5DDCD;
-    border-radius: 20px;
     margin-top: 25px;
 }
 .logo {
@@ -36,6 +34,7 @@
 .name {
     color: #ECD4DF;
     font-size: 0.9rem;
+    margin: 0;
 }
 
 .containerMiddle {
@@ -65,5 +64,11 @@
 }
 .text {
     margin-left: 10px;
+    color: #ECD4DF;
+}
+.linkSachko {
+    color: #ECD4DF;
+}
+.linkSachko:hover {
     color: #ECD4DF;
 }

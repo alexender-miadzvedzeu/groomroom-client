@@ -28,7 +28,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    color: #F44C9D;
+    color: #604051;
 }
 .iconBox {
     width: 30px;
@@ -50,7 +50,7 @@
 .mapContainer {
     height: 270px;
     width: 70%;
-    border: 2px solid #CC4787;
+    border: 2px solid #604051;
     border-radius: 30px;
     overflow: hidden;
 }

@@ -81,92 +81,23 @@ let initialState = {
         {src: '/images/services/icons/vector_28.png'},
         {src: '/images/services/icons/vector_29.png'}
     ],
-    tablesData: {
-        prices_1_deco: {
-            tableHead: '(Стрижка, мытьё с шампунем и бальзамом, сушка, подрезание когтей, чистка ушек, парфюм)',
-            table: [
-                {service_id: '3', service_name: 'Стрижка', service_price: '100'},
-                {service_id: '3', service_name: 'Стрижка', service_price: '150'},
-                {service_id: '3', service_name: 'Стрижка', service_price: '200'},
-                {service_id: '3', service_name: 'Стрижка', service_price: '250'},
-                {service_id: '3', service_name: 'Стрижка', service_price: '300'}
-            ],
-            tableName: 'prices_1_deco'
-        },
-        prices_2_lite: {
-            tableHead: '(Мытьё с шампунем и бальзамом, сушка, вычёсывание, подрезание когтей, чистка ушек, окантовка лапок, “открыть глазки”)',
-            table: [
-                {service_id: '3', service_name: 'Стрижка', service_price: '100'}
-            ],
-            tableName: 'prices_2_lite'
-        },
-        prices_3_trim: {
-            tableHead: '(Мытьё с шампунем и бальзамом, сушка, тримминг, чистка ушек, подрезание когтей, парфюм)',
-            table: [
-                {service_id: '3', service_name: 'Стрижка', service_price: '100'}
-            ],
-            tableName: 'prices_3_trim'
-        },
-        prices_4_express: {
-            tableHead: '(Мытьё с шампунем и бальзамом, сушка, чистка ушек, подрезание когтей, вычёсывание специнструментом, парфюм)',
-            table: [
-                {service_id: '3', service_name: 'Стрижка', service_price: '100'}
-            ],
-            tableName: 'prices_4_express'
-        },
-        prices_5_cats: {
-            tableHead: 'Услуги по уходу за котом',
-            table: [
-                {service_id: '3', service_name: 'Стрижка', service_price: '100'}
-            ],
-            tableName: 'prices_5_cats'
-        },
-        prices_6_complementary: {
-            tableHead: 'Дополнительные услуги',
-            table: [
-                {service_id: '3', service_name: 'Стрижка', service_price: '100'}
-            ],
-            tableName: 'prices_6_complementary'
-        }
-    },
-    currentTable: 'prices_1_deco'
+    currentTable: []
 }
 
 const servicesDataReducer = (state = initialState, action) => {
     
     switch (action.type) {
         case SET_TABLE:
-            let tableName = action.tableName;
-            let tableData = action.tableData;
-            
-            let stateCopy = {...state};
-            stateCopy.tablesData = {...state.tablesData}
-            stateCopy.tablesData[tableName] = {...state.tablesData[tableName]}
-            stateCopy.tablesData[tableName].table = [...state.tablesData[tableName].table]
-            stateCopy.tablesData[tableName].table = tableData;
-            
-            // return {...state, 
-            //     tablesData: {...state.tablesData},
-            //     tablesData[tableName]: {...state.tablesData[tableName]},
-            //     tablesData[tableName].table: [...state.tablesData[tableName].table],
-            //     stateCopy.tablesData[tableName].table: tableData
-            // }
-
-            return stateCopy;
-            break;
-    
-        default:
-            break;
+            return {...state, currentTable: action.currentTable};
     }
     return state;
 }
 
 
-export const setTableAC = (tableName, tableData) => {
+export const setTableAC = currentTable => {
     return {
         type: SET_TABLE,
-        tableName: tableName,
-        tableData: tableData
+        currentTable: currentTable
     }
 }
 
