@@ -112,40 +112,16 @@ const CenterMode = props => {
     const settings = {
         className: "center",
         centerMode: true,
-        slidesToShow: 5,
+        // slidesToShow: 5,
         speed: 500,
         lazyLoad: "progressive",
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
             {
-                breakpoint: 3000,
-                settings: {
-                    slidesToShow: 17,
-                    slidesToScroll: 3,
-                    infinite: true
-                }
-            },
-            {
-                breakpoint: 2500,
-                settings: {
-                    slidesToShow: 15,
-                    slidesToScroll: 3,
-                    infinite: true
-                }
-            },
-            {
                 breakpoint: 2000,
                 settings: {
-                    slidesToShow: 11,
-                    slidesToScroll: 3,
-                    infinite: true
-                }
-            },
-            {
-                breakpoint: 1400,
-                settings: {
-                    slidesToShow: 8,
+                    slidesToShow: 6,
                     slidesToScroll: 3,
                     infinite: true
                 }
@@ -154,6 +130,22 @@ const CenterMode = props => {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 5,
+                    slidesToScroll: 3,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 3,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true
                 }

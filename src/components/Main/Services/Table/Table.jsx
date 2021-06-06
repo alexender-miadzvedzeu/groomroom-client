@@ -5,8 +5,9 @@ import { connect } from 'react-redux';
 import { setTableAC } from "./../../../../Redux/servicesReducer";
 
 const Table = props => {
+
     const navBar = useRef();
-    const row = useRef();
+    
     useEffect(() => {
         getTable('prices_1_deco');
         for (let tab of navBar.current.children) {
@@ -36,7 +37,6 @@ const Table = props => {
             </div>
         )
     });
-    
     
     return (
         <div className={classes.wrapper}>
