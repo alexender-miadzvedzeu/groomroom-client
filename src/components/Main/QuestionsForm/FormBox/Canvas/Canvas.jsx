@@ -17,10 +17,12 @@ class Canvas extends React.Component {
             
             let width = window.innerWidth / 3;
             let height = window.innerWidth / 3;
+
             if (window.innerWidth > 1200) {
                 width = 1200 / 3;
                 height = 1200 / 3;
             }
+            
             canvas.width = width;
             canvas.height = height;
             

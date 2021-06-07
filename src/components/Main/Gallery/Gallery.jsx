@@ -8,7 +8,7 @@ import BGIconContainerG from "./BGIconGContainer/BGIconContainerG";
 
 const Gallery = () => {
     return (
-        <div className={classes.wrapper}>
+        <div className={classes.wrapper} id="gallery">
             <CanvasBeforeG />
             <ImagesContainer />
             <CanvasAfterG />

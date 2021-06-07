@@ -39,6 +39,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: emergence;
+    animation-duration: 1s;
 }
 .tableRow:nth-last-of-type(2n + 1) {
     background: #FFC3E1;
@@ -59,4 +61,9 @@
 .tableRow_price {
     margin-right: 10px;
     text-align: center;
+}
+
+@keyframes emergence {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }

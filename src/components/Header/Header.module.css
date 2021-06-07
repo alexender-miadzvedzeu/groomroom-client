@@ -12,7 +12,7 @@
 .head {
     color: #F44C9D;
     font-size: 30px;
-    margin: 10% 0 0 10%;
+    padding: 20% 0 0 10%;
 }
 .button {
     width: 200px;
@@ -29,4 +29,11 @@
 }
 .button span {
     font-family: 'Prosto One', cursive;
+}
+.button .link {
+    text-decoration: none;
+    color: #000;
+    font-family: Prosto One;
+    font-style: normal;
+    font-weight: normal;
 }

@@ -7,7 +7,7 @@ import BGIconContainer from "./BGIconContainer/BGIconContainer";
 
 const Contacts = () => {
     return (
-        <div className={classes.wrapper}>
+        <div className={classes.wrapper} id="contacts">
             <CanvasBeforeCon />
             <ContactsContainer />
             <CanvasAfterCon />

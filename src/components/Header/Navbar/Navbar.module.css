@@ -1,10 +1,18 @@
 .wrapper {
     display: flex;
-    margin: 0 10%;
     padding-top: 1%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+.wrapper#scroll {
+    background: #ffffffea;
+    transition: background 0.5s;
 }
 .logoContainer {
     overflow: hidden;
+    margin-left: 5%;
 }
 .logo {
     width: 100%;

@@ -4,7 +4,7 @@ import classes from './Master.module.css';
 
 const Master = () => {
     return (
-        <div className={classes.wrapper}>
+        <div className={classes.wrapper} id="master">
             <h3 className={classes.head}>Наш мастер</h3>
             <div className={classes.container}>
                 <div className={classes.container__canvas}>

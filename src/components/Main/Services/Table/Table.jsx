@@ -35,7 +35,7 @@ const Table = props => {
                 <p className={classes.tableRow_name}>{tableRowInfo.service_name}</p>
                 <p className={classes.tableRow_price}>{tableRowInfo.service_price} byn</p>
             </div>
-        )
+        );
     });
     
     return (

@@ -5,7 +5,7 @@ import Table from "./Table/Table";
 
 const Services = (props) => {
     return (
-        <div className={classes.wrapper}>
+        <div className={classes.wrapper} id="services">
             <ServicesHead />
             <Table />
         </div>
