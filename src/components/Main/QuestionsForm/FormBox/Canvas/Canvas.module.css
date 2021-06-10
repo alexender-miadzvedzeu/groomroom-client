@@ -3,11 +3,12 @@
 }
 .wrapper {
     /* width: 20%; */
+    display: block;
     position: absolute;
     top: -170px;
     right: 5%;
     z-index: 9999;
 }
 #draw {
-
+    z-index: 9999;
 }

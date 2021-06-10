@@ -5,7 +5,7 @@
     font-family: Prosto One;
     color: #604051;
     font-weight: normal;
-    padding: 5% 0 2% 15%;
+    padding: 10% 0 2% 15%;
 }
 .container {
     display: flex;
@@ -35,4 +35,12 @@
     background-position: right;
     z-index: 0;
     opacity: 0.1;
+}
+
+@media screen and (max-width: 650px) {
+    .container__text {
+        font-size: 0.8rem;
+        line-height: 170%;
+        font-weight: 1200;
+    }
 }

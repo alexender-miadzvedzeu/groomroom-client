@@ -25,6 +25,9 @@
     justify-content: center;
     align-items: center;
 }
+input.numInput {
+    margin-left: 20px;
+}
 .header {
     font-family: 'Prosto One';
     color: #FFC3E1;
@@ -36,4 +39,33 @@
     bottom: 80px;
     left: 330px;
     display: none;
+}
+button.button {
+    background: #FFC3E1;
+    color: #000;
+    padding: 10px 50px;
+    font-family: Prosto One;
+    border: none;
+    border-radius: 10px;
+}
+@media screen and (max-width: 650px) {
+    .canvasWrapper {
+        /* display: none; */
+    }
+    .inputBox {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 60%;
+    }
+    input.numInput {
+        margin-left: 0px;
+    }
+    .canvasWrapper {
+        top: 75px;
+    }
+    .formCheck {
+        width: 75%;
+        margin-top: 35px;
+    }
 }

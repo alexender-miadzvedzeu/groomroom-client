@@ -29,3 +29,10 @@
     font-size: 11px;
     margin: 5px 0 25px;
 }
+
+@media screen and (max-width: 650px) {
+    .questionBlock .question {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+}

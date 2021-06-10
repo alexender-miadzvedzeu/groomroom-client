@@ -1,6 +1,6 @@
 import React from 'react';
-import classes from './FormBox.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import classes from './FormBox.module.css';
 import { Form, Button } from 'react-bootstrap';
 import Canvas from './Canvas/Canvas';
 import { useRef, useEffect, useState } from "react";
@@ -141,8 +141,9 @@ const FormBox = () => {
                                 </Form.Group>
                                 <Form.Group controlId="formBasicNum">
                                     <Form.Control
+                                        className={classes.numInput}
                                         ref={numberInput}
-                                        style={{ background: '#DACFB9', borderRadius: '50px', marginLeft: '20px' }}
+                                        style={{ background: '#DACFB9', borderRadius: '50px' }}
                                         type="tel"
                                         placeholder="Номер телефона"
                                         autoComplete="off"
@@ -154,6 +155,7 @@ const FormBox = () => {
                             <div className={classes.buttonBlock}>
                                 <Form.Group controlId="formBasicCheckbox" >
                                     <Form.Check
+                                        className={classes.formCheck}                                    
                                         onClick={() => checkbox.current.checked ? button.current.disabled = false : button.current.disabled = true}
                                         ref={checkbox}
                                         style={{ color: '#E5DDCD' }}
@@ -162,6 +164,7 @@ const FormBox = () => {
                                     />
                                 </Form.Group>
                                 <Button
+                                    className={classes.button}
                                     onClick={() => {
                                         if (questionInput.current.value.length != 0 && numberInput.current.value.length != 0 && numberInput.current.value.length === 17) {
                                             sendQuestion(questionInput.current.value, numberInput.current.value)
@@ -171,9 +174,10 @@ const FormBox = () => {
                                             errTypeSpan.current.style.display = 'block'
                                         }
                                     }}
+                                    style={{background: '#FFC3E1'}}
                                     ref={button}
-                                    style={{ background: '#FFC3E1', color: '#000', padding: '10px 50px', fontFamily: 'Prosto One', border: 'none', borderRadius: '10px' }}
-                                    variant="primary"
+                                    
+                                    // variant="primary"
                                 >Оставить заявку</Button>
                             </div>
                         </div>

@@ -57,4 +57,30 @@
 iframe {
     width: 100%;
     height: 100%;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 650px) {
+    .box {
+        flex-direction: column;
+    }
+    .mapContainer {
+        width: 100%;
+    }
+    .info {
+        height: auto;
+        width: 120%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+    span.text {
+        font-size: 0.8rem;
+    }
+    .contactsInfo {
+        margin: 3% 0;
+    }
 }

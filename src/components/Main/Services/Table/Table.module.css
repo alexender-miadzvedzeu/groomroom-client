@@ -1,7 +1,7 @@
 .wrapper {
     width: 80%;
     max-width: 800px;
-    min-height: 950px;
+    min-height: 900px;
     margin: 0 auto;
 }
 .navBar {
@@ -66,4 +66,33 @@
 @keyframes emergence {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@media screen and (max-width: 650px) {
+    .wrapper {
+        width: 99%;
+    }
+    .navButton_text {
+        font-size: 0.6rem;
+    }
+    .tableRowConteiner {
+        margin-top: 3%;
+    }
+    .tableRow_name,
+    .tableRow_price {
+        font-size: 0.6rem;
+    }
+    .navBar {
+        display: grid;
+        grid-template-columns: repeat(3, calc(100%/3));
+    }
+    .navButton {
+        margin: 1.5% 3% 2% 0;
+        height: 50px;
+        border-radius: 7.5px;
+    }
+    .navButton,
+    .navButton:last-of-type {
+        box-shadow: 0.5px 0.5px 1px 0.3px #000;
+    }
 }

@@ -32,3 +32,100 @@
     color: #F44C9D;
     cursor: pointer;
 }
+.menuButton {
+    display: none;
+}
+.contactContainer {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+
+    /* list button styles */
+    .wrapper {
+        justify-content: space-between;
+    }
+    .menuButton {
+        width: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        margin-right: 30px;
+    }
+    .line {
+        display: block;
+        width: 100%;
+        height: 1px;
+        border: 1.5px solid #492D3C;
+        background: #492D3C;
+    }
+    .line:nth-last-of-type(1) {
+        width: 50%;
+    }
+    .line:nth-last-of-type(2) {
+        width: 75%;
+        margin: 3px 0;
+    }
+    /* list button styles */
+
+    /* nav button styles */
+    .logoContainer {
+        height: 50px;
+        margin: 1% 0;
+    }
+    .navButtons {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: -100vh;
+        background: #604051f8;
+        transition: all 0.5s;
+    }
+    .navButtons.close {
+        position: absolute;
+        top: 0;
+        transition: all 0.5s;
+    }
+    .navButtons li {
+        color: #ECD4DF;
+        margin: 10px ;
+    }
+    #mobileHide {
+        display: none;
+    }
+    .contactContainer {
+        width: 100%;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 10px auto;
+    }
+    .iconsContainer {
+        width: 25px;
+        height: 25px;
+        overflow: hidden;
+        object-fit: contain;
+        object-position: center;
+        margin-left: 30%;
+    }
+    .iconsContainer img {
+        width: 100%;
+        height: 100%;
+    }
+    .text {
+        width: 300px;
+        margin-left: 15px;
+        color: #ECD4DF;
+    }
+    /* nav button styles */
+}

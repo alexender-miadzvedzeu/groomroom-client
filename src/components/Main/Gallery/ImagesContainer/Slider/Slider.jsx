@@ -37,7 +37,7 @@ class SampleNextArrow extends React.Component {
                     ...this.style,
                     position: 'relative',
                     bottom: '0',
-                    left: '48%',
+                    left: '45%',
                     zIndex: 5,
                     display: "block",
                     width: '50px'
@@ -83,7 +83,7 @@ class SamplePrevArrow extends React.Component {
                     ...this.style,
                     position: 'relative',
                     top: '314px',
-                    left: '52%',
+                    left: '55%',
                     zIndex: 5,
                     display: "block",
                     width: '50px' 
@@ -121,7 +121,7 @@ const CenterMode = props => {
             {
                 breakpoint: 2000,
                 settings: {
-                    slidesToShow: 6,
+                    slidesToShow: 7,
                     slidesToScroll: 3,
                     infinite: true
                 }
@@ -129,7 +129,7 @@ const CenterMode = props => {
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 5,
+                    slidesToShow: 6,
                     slidesToScroll: 3,
                     infinite: true
                 }
@@ -137,7 +137,7 @@ const CenterMode = props => {
             {
                 breakpoint: 900,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 5,
                     slidesToScroll: 3,
                     infinite: true
                 }
@@ -145,7 +145,7 @@ const CenterMode = props => {
             {
                 breakpoint: 700,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 4,
                     slidesToScroll: 3,
                     infinite: true
                 }
