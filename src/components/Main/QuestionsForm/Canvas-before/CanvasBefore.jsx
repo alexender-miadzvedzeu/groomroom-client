@@ -10,19 +10,26 @@ class CanvasBefore extends React.Component {
         const draw = () => {
             const canvas = this.myCanvas.current;
             const ctx = canvas.getContext("2d");
-            let width = window.innerWidth - 17;
-            let height = 50;
+            let width = null;
+            
+            if (window.innerWidth <= 675) {
+                width = window.innerWidth;
+            } else {
+                width = window.innerWidth - 17;
+            }
+
+            let height = width * 0.05;
             canvas.width = width;
             canvas.height = height;
             ctx.fillStyle = "#492D3C";
             ctx.lineWidth = 0;
 
-            ctx.moveTo(0, 50);
-            ctx.quadraticCurveTo(width * 0.1, 5, width / 5 * 1, 5);
-            ctx.quadraticCurveTo(width * 0.25, 5, width / 5 * 1.65, 25);
-            ctx.quadraticCurveTo(width * 0.45, 45, width / 5 * 3.1, 15);
-            ctx.quadraticCurveTo(width * 0.7, 0, width, 50);
-            ctx.lineTo(0, 50);
+            ctx.moveTo(0, height);
+            ctx.quadraticCurveTo(width * 0.1, height * 0.1, width / 5 * 1, height * 0.1);
+            ctx.quadraticCurveTo(width * 0.25, height * 0.1, width / 5 * 1.65, height * 0.5);
+            ctx.quadraticCurveTo(width * 0.45, height * 0.9, width / 5 * 3.1, height * 0.3);
+            ctx.quadraticCurveTo(width * 0.7, 0, width, height);
+            ctx.lineTo(0, height);
             ctx.fill();
         }
         draw();

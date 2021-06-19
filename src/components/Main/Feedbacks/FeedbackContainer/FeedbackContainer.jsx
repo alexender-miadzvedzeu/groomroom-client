@@ -6,7 +6,8 @@ import FeedbackItem from "./FeedbackItem/FeedbackItem";
 import { Button } from 'react-bootstrap';
 
 const FeedbackContainer = props => {
-    const box = useRef()
+    const box = useRef();
+
     useEffect(async () => {
         await fetch(`${process.env.REACT_APP_URL}/feedback`, {
             method: 'get'
@@ -14,7 +15,8 @@ const FeedbackContainer = props => {
         .then(res => res.json())
         .then(data => props.setFeedBackData(data))
     }, []);
-    const test = () => {
+
+    const scale = () => {
         let childrens = box.current.childNodes;
         for (let child of childrens) {
             child.getBoundingClientRect().x < 550 ? child.style.transform = 'scale(1)' : null
@@ -22,13 +24,18 @@ const FeedbackContainer = props => {
             child.getBoundingClientRect().x < 250 ? child.style.transform = 'scale(0.9)' : null
         }
     }
+
+    const showModelFrame = () => {
+        props.setActive(true);
+    }
+    
     return (
         <div className={classes.wrapper}>
-            <div ref={box} onScroll={test} className={classes.itemBox}>
-                <div className={classes.empty}></div>
+            <div ref={box} onScroll={scale} className={classes.itemBox}>
+                {/* <div className={classes.empty}></div> */}
                 {props.feedbackData.map((item, key) => <FeedbackItem key={key} data={item} />)}
             </div>
-            <Button style={{position: 'absolute', right: '10%', background: '#FFC3E1', color: '#000', padding: '10px 50px', fontFamily: 'Prosto One', border: 'none', borderRadius: '10px' }} variant="primary" >Написать отзыв</Button>
+            <Button onClick={showModelFrame} style={{position: 'absolute', right: '10%', background: '#FFC3E1', color: '#000', padding: '10px 50px', fontFamily: 'Prosto One', border: 'none', borderRadius: '10px' }} variant="primary" >Написать отзыв</Button>
         </div>
     )
 }

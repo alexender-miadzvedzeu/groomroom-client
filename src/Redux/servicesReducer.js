@@ -79,7 +79,13 @@ let initialState = {
         {src: '/images/services/icons/vector_26.png'},
         {src: '/images/services/icons/vector_27.png'},
         {src: '/images/services/icons/vector_28.png'},
-        {src: '/images/services/icons/vector_29.png'}
+        {src: '/images/services/icons/vector_29.png'},
+        {src: '/images/services/icons/vector_20.png'},
+        {src: '/images/services/icons/vector_21.png'},
+        {src: '/images/services/icons/vector_22.png'},
+        {src: '/images/services/icons/vector_23.png'},
+        {src: '/images/services/icons/vector_24.png'},
+        {src: '/images/services/icons/vector_25.png'}
     ],
     currentTable: []
 }

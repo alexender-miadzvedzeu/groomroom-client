@@ -7,9 +7,8 @@ import Questions from "./Questions/Questions";
 import QuestionsForm from "./QuestionsForm/QuestionsForm";
 import Feedback from "./Feedbacks/Feedbacks";
 import Contacts from "./Contacts/Contacts";
-import Footer from "../Footer/Footer"
 
-const Main = () => {
+const Main = props => {
     return (
         <div className={classes.wrapper}>
             <Master />
@@ -17,9 +16,8 @@ const Main = () => {
             <Gallery />
             <Questions />
             <QuestionsForm />
-            <Feedback />
-            <Contacts />
-            <Footer />
+            <Feedback setActive={props.setActive} />
+            <Contacts />   
         </div>
     )
 }

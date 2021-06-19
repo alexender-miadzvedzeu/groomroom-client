@@ -8,3 +8,16 @@
 .empty {
     padding: 0 20%;
 }
+.modalFrameWrapper {
+    display: none;
+}
+
+.modalFrameWrapper.show {
+    display: block;
+    width: calc(100vw - 17px);
+    height: 100vh;
+    position: absolute;
+    /* top: -50%; */
+    z-index: 100;
+    border: 2px solid red;
+}

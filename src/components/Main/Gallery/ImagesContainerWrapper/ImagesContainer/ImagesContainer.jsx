@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import classes from './ImagesContainer.module.css';
 import { connect } from "react-redux";
-import { setPhotosAC } from "./../../../../Redux/imagesReducer";
-import Slider from "./Slider/Slider.jsx";
+import Image from "./Image/Image";
+import { setPhotosAC } from "./../../../../../Redux/imagesReducer";
 
 const ImagesContainer = (props) => {
+
     return (
         <div className={classes.wrapper}>
             <div className={classes.imgBox}>
-                <Slider />
+                <Image setPhotos={props.setPhotos} photos={props.photos}/>                
             </div>
         </div>
     )
