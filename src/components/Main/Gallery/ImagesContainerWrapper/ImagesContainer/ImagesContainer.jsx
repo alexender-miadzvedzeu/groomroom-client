@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import classes from './ImagesContainer.module.css';
 import { connect } from "react-redux";
 import Image from "./Image/Image";
@@ -11,6 +11,7 @@ const ImagesContainer = (props) => {
             <div className={classes.imgBox}>
                 <Image setPhotos={props.setPhotos} photos={props.photos}/>                
             </div>
+                       
         </div>
     )
 }

@@ -23,7 +23,9 @@
 
 .frame {
     width: 50%;
+    max-width: 500px;
     height: 60%;
+    min-height: 400px;
     max-height: 450px;
     background: #492D3C;
     border: 1px solid #CC4787;
@@ -62,75 +64,87 @@
     margin-top: 5%;
 }
 .name::-webkit-input-placeholder { 
-    position: absolute;
-    top: 30%;
-    left: 3%;
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 4%;
+    left: 0.8rem;
     color: #F44C9D;
 }
 .name:-ms-input-placeholder { 
-    position: absolute;
-    top: 30%;
-    left: 3%;
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 4%;
+    left: 0.8rem;
     color: #F44C9D;
 }
 .name::-ms-input-placeholder { 
-    position: absolute;
-    top: 30%;
-    left: 3%;
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 4%;
+    left: 0.8rem;
     color: #F44C9D;
 }
 .name::placeholder { 
-    position: absolute;
-    top: 30%;
-    left: 3%;
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 4%;
+    left: 0.8rem;
     color: #F44C9D;
 }
 .phone::-webkit-input-placeholder { 
-    position: absolute;
-    top: 30%;
-    left: 3%;
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 4%;
+    left: 0.8rem;
     color: #F44C9D;
 }
 .phone:-ms-input-placeholder { 
-    position: absolute;
-    top: 30%;
-    left: 3%;
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 4%;
+    left: 0.8rem;
     color: #F44C9D;
 }
 .phone::-ms-input-placeholder { 
-    position: absolute;
-    top: 30%;
-    left: 3%;
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 4%;
+    left: 0.8rem;
     color: #F44C9D;
 }
 .phone::placeholder { 
-    position: absolute;
-    top: 30%;
-    left: 3%;
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 4%;
+    left: 0.8rem;
     color: #F44C9D;
 }
 .feedBackText::-webkit-input-placeholder { 
-    position: absolute;
-    top: 10%;
-    left: 3%;
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 30%;
+    left: 0.8rem;
     color: #F44C9D;
 }
 .feedBackText:-ms-input-placeholder { 
-    position: absolute;
-    top: 10%;
-    left: 3%;
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 30%;
+    left: 0.8rem;
     color: #F44C9D;
 }
 .feedBackText::-ms-input-placeholder { 
-    position: absolute;
-    top: 10%;
-    left: 3%;
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 30%;
+    left: 0.8rem;
     color: #F44C9D;
 }
 .feedBackText::placeholder { 
-    position: absolute;
-    top: 10%;
-    left: 3%;
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 30%;
+    left: 0.8rem;
     color: #F44C9D;
 }
 .button {
@@ -149,6 +163,9 @@
     top: 44.5%;
     font-size: 0.8rem;
     color: #f94848;
+}
+input {
+    line-height: 1;
 }
 @media screen and (max-width: 650px) {
     .frame {
