@@ -16,7 +16,7 @@ const ContactsContainer = () => {
                             <img className={classes.icon} src={phoneNumLogo} alt="phoneNumLogo" />
                         </div>
                         <div className={classes.textBox}>
-                            <span className={classes.text}>8 (029) 796-99-66</span>
+                            <span className={classes.text}><a href="tel:+375(29)796-99-66">+375(29)796-99-66</a></span>
                         </div>
                     </div>
                     <div className={classes.contactsInfo}>
@@ -24,7 +24,7 @@ const ContactsContainer = () => {
                             <img className={classes.icon} src={instagramLogo} alt="instagramLogo" />
                         </div>
                         <div className={classes.textBox}>
-                            <span className={classes.text}>groomroom.minsk</span>
+                            <span className={classes.text}><a href="https://www.instagram.com/groomroom.minsk/">groomroom.minsk</a></span>
                         </div>
                     </div>
                     <div className={classes.contactsInfo}>

@@ -47,6 +47,7 @@
 }
 .textBox {
     width: 75%;
+    z-index: 10;
 }
 .mapContainer {
     height: 270px;
@@ -55,6 +56,12 @@
     border-radius: 30px;
     overflow: hidden;
     z-index: 10;
+}
+.textBox a,
+.textBox a:hover,
+.textBox a:active {
+    color: #604051;
+    text-decoration: none;
 }
 iframe {
     width: 100%;
