@@ -1,9 +1,20 @@
 .itemBox {
     display: flex;
-    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 .itemBox::-webkit-scrollbar {
-    width: 0;
+    height: 10px;
+    border: 1px solid #dac293;
+}
+
+.itemBox::-webkit-scrollbar-track {
+    /* background: #DACFB9; */
+}
+
+.itemBox::-webkit-scrollbar-thumb {
+    background: #cfa3b7;
+    border-radius: 10px;
 }
 .empty {
     padding: 0 20%;
@@ -21,3 +32,16 @@
     z-index: 100;
     border: 2px solid red;
 }
+.arrowBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+@media screen and (max-width: 650px) {
+    .itemBox::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+

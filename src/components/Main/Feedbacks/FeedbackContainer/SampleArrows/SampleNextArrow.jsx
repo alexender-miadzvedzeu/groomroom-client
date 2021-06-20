@@ -28,7 +28,9 @@ class SampleNextArrow extends React.Component {
 
     render() {
         return (
-            <button className={classes.nextArrow} onClick={this.onClick} >
+            <button
+                className={classes.nextArrow}
+                onClick={this.onClick} >
                 <canvas ref={this.myCanvas} id={classes.draw} width="50" height="50"></canvas>
             </button>
         )

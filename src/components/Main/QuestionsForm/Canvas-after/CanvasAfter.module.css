@@ -3,6 +3,8 @@
 }
 .wrapper {
     overflow-y: hidden;
+    position: relative;
+    z-index: 0;
 }
 #draw{
     overflow-y: hidden;

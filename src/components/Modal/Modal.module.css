@@ -65,86 +65,74 @@
 }
 .name::-webkit-input-placeholder { 
     position: relative;
-    font-size: 0.8rem;
-    bottom: 4%;
-    left: 0.8rem;
+    top: 3%;
+    left: 3%;
     color: #F44C9D;
 }
 .name:-ms-input-placeholder { 
     position: relative;
-    font-size: 0.8rem;
-    bottom: 4%;
-    left: 0.8rem;
+    top: 3%;
+    left: 3%;
     color: #F44C9D;
 }
 .name::-ms-input-placeholder { 
     position: relative;
-    font-size: 0.8rem;
-    bottom: 4%;
-    left: 0.8rem;
+    top: 3%;
+    left: 3%;
     color: #F44C9D;
 }
 .name::placeholder { 
     position: relative;
-    font-size: 0.8rem;
-    bottom: 4%;
-    left: 0.8rem;
+    top: 3%;
+    left: 3%;
     color: #F44C9D;
 }
 .phone::-webkit-input-placeholder { 
     position: relative;
-    font-size: 0.8rem;
-    bottom: 4%;
-    left: 0.8rem;
+    top: 3%;
+    left: 3%;
     color: #F44C9D;
 }
 .phone:-ms-input-placeholder { 
     position: relative;
-    font-size: 0.8rem;
-    bottom: 4%;
-    left: 0.8rem;
+    top: 3%;
+    left: 3%;
     color: #F44C9D;
 }
 .phone::-ms-input-placeholder { 
     position: relative;
-    font-size: 0.8rem;
-    bottom: 4%;
-    left: 0.8rem;
+    top: 3%;
+    left: 3%;
     color: #F44C9D;
 }
 .phone::placeholder { 
     position: relative;
-    font-size: 0.8rem;
-    bottom: 4%;
-    left: 0.8rem;
+    top: 3%;
+    left: 3%;
     color: #F44C9D;
 }
 .feedBackText::-webkit-input-placeholder { 
     position: relative;
-    font-size: 0.8rem;
     bottom: 30%;
-    left: 0.8rem;
+    left: 3%;
     color: #F44C9D;
 }
 .feedBackText:-ms-input-placeholder { 
     position: relative;
-    font-size: 0.8rem;
     bottom: 30%;
-    left: 0.8rem;
+    left: 3%;
     color: #F44C9D;
 }
 .feedBackText::-ms-input-placeholder { 
     position: relative;
-    font-size: 0.8rem;
     bottom: 30%;
-    left: 0.8rem;
+    left: 3%;
     color: #F44C9D;
 }
 .feedBackText::placeholder { 
     position: relative;
-    font-size: 0.8rem;
     bottom: 30%;
-    left: 0.8rem;
+    left: 3%;
     color: #F44C9D;
 }
 .button {

@@ -33,13 +33,13 @@ const Footer = () => {
                     <div className={classes.logoContainer}>
                         <img src={phoneNumLogo} alt="phoneNumLogo" />
                     </div>
-                    <span className={classes.text}>8 (029) 796-99-66</span>
+                    <span className={classes.text}><a href="tel:+375(29)796-99-66">+375(29)796-99-66</a></span>
                 </div>
                 <div className={classes.row}>
                     <div className={classes.logoContainer}>
                         <img src={instagramLogo} alt="instagramLogo" />
                     </div>
-                    <span className={classes.text}>groomroom.minsk</span>
+                    <span className={classes.text}><a href="https://www.instagram.com/groomroom.minsk/">groomroom.minsk</a></span>
                 </div>
                 <div className={classes.row}>
                     <div className={classes.logoContainer}>

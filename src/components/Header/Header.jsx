@@ -8,7 +8,7 @@ const Header = (props) => {
         <div className={classes.wrapper}>
             <Navbar/>
             <h3 className={classes.head}>Гигиена - залог здоровья<br/>вашего питомца</h3>
-            <div className={classes.button}><span><a className={classes.link} href="https://l.instagram.com/?u=https%3A%2F%2Fdikidi.online%2F386427&e=ATNkpDb0M8E0JIQsDpZIQrEC3dCn3IItPkCrpwVuTo7jy5JuPJaXHyjNFhQDXrBTMyI4i-nvaeuZCfT8J6IdfQ&s=1">Записаться</a></span></div>
+            <div className={classes.button}><span><a className={classes.link} href="https://dikidi.net/386427?p=1.pi-po">Записаться</a></span></div>
         </div>
     )
 }

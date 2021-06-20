@@ -65,6 +65,12 @@
     margin-left: 10px;
     color: #ECD4DF;
 }
+.text a,
+.text a:hover,
+.text a:active {
+    color: #ECD4DF;
+    text-decoration: none;
+}
 .linkSachko {
     color: #ECD4DF;
 }

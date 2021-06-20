@@ -5,15 +5,24 @@ import { Form, Button } from 'react-bootstrap';
 import Canvas from './Canvas/Canvas';
 import { useRef, useEffect, useState } from "react";
 
-const FormBox = () => {
-    useEffect(() => {
-        button.current.disabled = true;
-    }, [])
+const FormBox = props => {
+    
+    const formWrapperRef = useRef();
     const checkbox = useRef();
     const button = useRef();
     const questionInput = useRef();
     const numberInput = useRef();
     const errTypeSpan = useRef();
+
+    useEffect(() => {
+        button.current.disabled = true;
+        props.getHeight(formWrapperRef.current.getBoundingClientRect().height);
+        window.addEventListener('resize', () => {
+            props.getHeight(formWrapperRef.current.getBoundingClientRect().height);
+        });
+    }, [])
+
+    
     const sendQuestion = async (question, num) => {
         let data = {title: question, phone: num.replace(/[-()+]/g, "")}; 
         await fetch(`${process.env.REACT_APP_URL}/questions`, {
@@ -127,10 +136,13 @@ const FormBox = () => {
         }
         number.length > 17 ? numberInput.current.value = '+375' + '(' + `${number[5]}${number[6]}` + ')' + `${number[8]}${number[9]}${number[10]}` + '-' + `${number[12]}${number[13]}` + '-' + `${number[15]}${number[16]}` : null
     }
+
+    
+
     return (
         <div className={classes.wrapper}>
             <div className={classes.box}>
-                <div className={classes.formWrapper}>
+                <div className={classes.formWrapper} ref={formWrapperRef}>
                     <h3 className={classes.header}>Остались вопросы?</h3>
                     <Form>
                         <div className={classes.container}>

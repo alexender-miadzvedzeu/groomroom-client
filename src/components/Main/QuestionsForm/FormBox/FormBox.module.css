@@ -2,9 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #492D3C;
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    height: 100%;
+    top: 0%;
+    z-index: 10;
+    width: 100%;
 }
 .box {
     max-width: 1350px;
@@ -13,10 +15,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .canvasWrapper {
     position: relative;
 }
+
 .formWrapper {
     margin-left: 10px;
 }
@@ -47,6 +51,7 @@ button.button {
     font-family: Prosto One;
     border: none;
     border-radius: 10px;
+    position: relative;
 }
 @media screen and (max-width: 650px) {
     .canvasWrapper {

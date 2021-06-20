@@ -3,8 +3,8 @@
     height: 25px;
     position: absolute;
     opacity: 0.5;
-    z-index: 3;
     overflow-y: hidden;
+    z-index: 3;
 }
 @media screen and (max-width: 650px) {
     .icon {
@@ -296,38 +296,4 @@
 .icon:nth-last-of-type(78) {
     top: 85%;
     left: 90%
-}
-.icon:nth-last-of-type(18) {
-    top: 85%;
-}
-.icon:nth-last-of-type(36) {
-    top: 85%;
-    left: 50%;
-}
-.icon:nth-last-of-type(55) {
-    top: 85%;
-    left: 60%;
-}
-.icon:nth-last-of-type(8) {
-    top: 85%;
-    left: 70%;
-}
-.icon:nth-last-of-type(27) {
-    top: 85%;
-    left: 90%;
-}
-.icon:nth-last-of-type(37) {
-    top: 15%;
-    left: 75%;
-}
-.icon:nth-last-of-type(46) {
-    top: 5%;
-    left: 70%;
-}
-.icon:nth-last-of-type(47) {
-    top: 5%;
-    left: 80%;
-}
-.icon:nth-last-of-type(56) {
-    display: none;
 }
