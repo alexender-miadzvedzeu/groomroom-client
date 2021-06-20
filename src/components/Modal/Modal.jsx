@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Modal.module.css';
-import { Form, Button } from 'react-bootstrap';
 import { useRef, useEffect } from "react";
+import proloader from '../../images/proloader.gif';
 
 const Modal = props => {
 
@@ -10,6 +10,8 @@ const Modal = props => {
     const numberInput =useRef();
     const errTypeSpan = useRef();
     const feedBackTextInput = useRef();
+    const button = useRef();
+    const preloaderRef = useRef();
     
     useEffect(()=> {
         show();
@@ -24,12 +26,15 @@ const Modal = props => {
     }
 
     const sendFeedBack = async () => {
+        
         if (nameInput.current.value.length !== 0 && feedBackTextInput.current.value.length !== 0 && numberInput.current.value.length !== 0 && numberInput.current.value.length === 17) {
             let data = {
                 name: nameInput.current.value, 
                 text: feedBackTextInput.current.value,
                 phone: numberInput.current.value.replace(/[-()+]/g, "")
-            }; 
+            };
+            preloaderRef.current.classList.add(classes.show);
+            button.current.disabled = true;
             await fetch(`${process.env.REACT_APP_URL}/feedback`, {
                 method: 'post',
                 headers: {
@@ -37,6 +42,8 @@ const Modal = props => {
                 },
                 body: JSON.stringify(data)
             })
+            preloaderRef.current.classList.remove(classes.show);
+            button.current.disabled = false;
             close();
         }
     }
@@ -147,6 +154,9 @@ const Modal = props => {
     }
 
     const close = () => {
+        nameInput.current.value = ''
+        numberInput.current.value = ''
+        feedBackTextInput.current.value = ''
         props.setActive(false);
     }
 
@@ -157,8 +167,9 @@ const Modal = props => {
                 <input ref={numberInput} className={classes.phone} type="tel" placeholder="Номер телефона" autoComplete="off" onChange={formatTelInputValue} />
                 <span ref={errTypeSpan} className={classes.span}></span>
                 <input ref={feedBackTextInput} className={classes.feedBackText} type="text" placeholder="Ваш комментарий..." autoComplete="off" />
-                <button onClick={sendFeedBack} className={classes.button}>Написать отзыв</button>
+                <button ref={button} onClick={sendFeedBack} className={classes.button}>Написать отзыв</button>
             </div>
+            <img ref={preloaderRef} className={classes.proloader} src={proloader} alt='proloader'/>
         </div>
     )
 }

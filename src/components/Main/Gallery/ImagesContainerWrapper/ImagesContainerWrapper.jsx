@@ -6,6 +6,7 @@ const ImagesContainerWrapper = (props) => {
 
     return (
         <div className={classes.wrapper}>
+            <h3 className={classes.header}>Галерея</h3>
             <ImagesContainer />
         </div> 
     )

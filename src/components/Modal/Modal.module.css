@@ -155,6 +155,16 @@
 input {
     line-height: 1;
 }
+.proloader.show {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+.proloader{
+    display: none;
+}
+
 @media screen and (max-width: 650px) {
     .frame {
         position: absolute;
