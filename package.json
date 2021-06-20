@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "groomroom",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,9 +12,11 @@
     "react-alice-carousel": "^2.5.1",
     "react-bootstrap": "^1.6.0",
     "react-dom": "^17.0.2",
+    "react-photo-gallery": "^8.0.0",
     "react-redux": "^7.2.4",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
+    "react-simple-image-viewer": "^0.0.8",
     "react-slick": "^0.28.1",
     "redux": "^4.1.0",
     "slick-carousel": "^1.8.1",

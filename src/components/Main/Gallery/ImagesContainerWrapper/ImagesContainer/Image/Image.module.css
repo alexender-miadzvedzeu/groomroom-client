@@ -38,6 +38,12 @@
     justify-content: center;
     align-items: center;
 }
+.viewer {
+    height: 80%;
+    width: 100%;
+    background: red;
+    margin-top: 200px;
+}
 
 @media screen and (max-width: 650px) {
     .imageList::-webkit-scrollbar {
