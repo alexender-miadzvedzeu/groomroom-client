@@ -41,10 +41,10 @@ class Canvas extends React.Component {
             ctx.quadraticCurveTo(width * 0.8, height * 0.03, width / 2, height * 0.025);
             ctx.stroke();
             ctx.clip();
-            ctx.drawImage(img, width * 0.05, - height * 0.2, width * 0.9, height * 1.15);
+            ctx.drawImage(img, width * 0.05,  height * 0.01, width * 0.9, height * 1.25); //arguments shoul be the same
 
             img.onload = () => {
-                ctx.drawImage(img, width * 0.05, height * 0.0, width * 0.9, height * 1.25);
+                ctx.drawImage(img, width * 0.05, height * 0.01, width * 0.9, height * 1.25); //arguments shoul be the same
             }
         }
         draw();
