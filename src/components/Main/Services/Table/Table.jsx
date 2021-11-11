@@ -57,7 +57,7 @@ const Table = props => {
                     <span className={classes.navButton_text}>Коты</span>
                 </div>
                 <div onClick={() => getTable('prices_6_complementary')} className={classes.navButton}>
-                    <span className={classes.navButton_text}>Комплекс с экспресс-линькой</span>
+                    <span className={classes.navButton_text}>Дополнительные услуги</span>
                 </div>
             </div>
             <div className={classes.tableRowConteiner}>

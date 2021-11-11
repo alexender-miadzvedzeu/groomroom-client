@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Canvas.module.css';
-import ava from '../../../../../images/ava_question.jpg';
+import ava from '../../../../../images/ava_question_new.jpg';
 
 class Canvas extends React.Component {
     constructor(props) {
@@ -44,7 +44,7 @@ class Canvas extends React.Component {
             ctx.drawImage(img, width * 0.05, - height * 0.2, width * 0.9, height * 1.15);
 
             img.onload = () => {
-                ctx.drawImage(img, width * 0.05, - height * 0.2, width * 0.9, height * 1.15);
+                ctx.drawImage(img, width * 0.05, height * 0.0, width * 0.9, height * 1.25);
             }
         }
         draw();
